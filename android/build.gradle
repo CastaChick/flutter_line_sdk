@@ -27,6 +27,8 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdk 33
+    
+    namespace 'com.linecorp.flutter_line_sdk'
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
