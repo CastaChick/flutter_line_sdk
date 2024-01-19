@@ -27,6 +27,15 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdk 33
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
     
     namespace 'com.linecorp.flutter_line_sdk'
 
